@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/heeeun1207/webpack_prac/issues"
   },
-  "homepage": "https://github.com/heeeun1207/webpack_prac#readme"
+  "homepage": "https://github.com/heeeun1207/webpack_prac#readme",
+  "dependencies": {
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  }
 }
