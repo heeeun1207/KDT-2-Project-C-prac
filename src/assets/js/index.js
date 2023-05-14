@@ -1,9 +1,12 @@
-<<<<<<< HEAD
-window.addEventListener('DOMContentLoaded', () => {
-  const bundlingTest = "i need bundling"
-  console.log(bundlingTest)
-})
-=======
-console.log('hello');
-const a = 1;
->>>>>>> heeeun1207/issue1
+/**
+ * * index.js는 앱 서버로 사용하기로 결정했다.
+ * * app.js를 import 하는 형태
+ * 
+ * 
+ * 
+ * 
+ */
+require("./assets/css/index.css");
+
+
+
