@@ -17,12 +17,14 @@
 const fs = require("fs");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+// work : copy-webpack-plugin은 서버사이드 멀티페이지 방식으로 송출할 때 사용
+// work : clinet-side 방식이라면 copy-webpack-plugin은 필요없다.
 const path = require("path");
 
 module.exports = {
 
   // * @property {string} mode - 빌드 모드. 'development' 또는 'production' 중 선택.
-  mode: "developmnet",
+  mode: "development",
   // * @property {string} entry - 애플리케이션의 진입점. JS 파일 경로.
   entry: "./src/index.js",
 
@@ -39,6 +41,11 @@ module.exports = {
 
 
   plugins: [
+
+
+
+
+
     // * @property {Object} plugins - 웹팩 플러그인 설정 객체.
     new HtmlWebpackPlugin({
       // * @property {string} template - 템플릿 HTML 파일 경로.
@@ -46,6 +53,11 @@ module.exports = {
       // * @property {string} filename - 결과 파일 이름.
       filename: "test.html"
     }),
+
+    
+  
+
+
     // * @property {Object} plugins - 웹팩 플러그인 설정 객체.
     new CopyWebpackPlugin({
       // * @property {Array} patterns - 복사할 파일 목록.
@@ -57,7 +69,12 @@ module.exports = {
           to: "./assets"
         }
       ]
-    })
+    }),
+
+
+
+
+
   ],
 
   module : {
