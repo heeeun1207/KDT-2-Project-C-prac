@@ -20,6 +20,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 // work : copy-webpack-plugin은 서버사이드 멀티페이지 방식으로 송출할 때 사용
 // work : clinet-side 방식이라면 copy-webpack-plugin은 필요없다.
 const path = require("path");
+// 바벨 설치 관련 정보 수집하고, 난이도별로 나누어 설명하기
 
 module.exports = {
 
